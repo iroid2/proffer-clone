@@ -38,15 +38,17 @@ img{
             position: absolute;
             z-index: 99999;
             top: 0;
-            padding: .7rem 1.2rem;
+            padding: .7rem 4rem;
+            // background-color: red;
             font-family: Arial, Helvetica, sans-serif;
-            border-bottom: 1px solid gray;
+            border-bottom: 1px solid rgb(255, 239, 239);
+            // position: sticky;
             // background-color: rgba(54, 53, 53, 0.5);
-            @media(max-width: 600px),(max-width: 400px){
+            @media(max-width: 600px){
                 background-color: rgb(11, 11, 11);
                 justify-content: space-between;
                 padding: 1rem 1rem;
-                position: static;
+                position: sticky;
             }
             img{
                 width: 120px;
@@ -54,46 +56,70 @@ img{
             .left-nav{
                 width: 70%;
                 gap: 2rem;
+                font-weight: bold;
                 align-items: center;
+                .home{
+                    border: 2px solid rgb(205,33,29);
+                    padding: .4rem .8rem;
+                    color: rgb(205,33,29);
+                    border-radius: 20px;
+                }
                 a{
                     text-decoration: none;
                     color: white;
-                    @media(max-width: 600px),(max-width: 400px){
+                    &:hover{
+                        color: rgb(205,33,29);
+                    }
+                    @media(max-width: 600px){
                         display: none;
                     }
                 }
-                // img{
-                //     width: 500px;
-                // }
             }
             .right-nav{
                 width: 30%;
                 padding: 1rem 2rem;
-                // background-color: rgb(9, 139, 199);
+                gap: .5rem;
                 button{
-                    padding: .4rem 1rem;
+                    padding: .4rem 1.1rem;
                     font-size: .9rem;
                     color: white;
                     font-weight: bold;
                     background-color: black;
-                    @media(max-width: 600px),(max-width: 400px){
+                    @media(max-width: 600px){
                         display: none;
                     }
                 }
                 .hamMen{
                     background-color: red;
                     visibility: hidden;
-                    @media(max-width: 600px),(max-width: 400px){
+                    @media(max-width: 600px){
                         visibility: visible;
                     }
                 }
                 .navDonate{
                     padding: .6rem 1rem;
-                    border: 1px solid white;
+                    gap: .4rem;
+                    border: 2px solid white;
+                    &:hover{
+                        color: rgb(205,33,29);
+                        border: 2px solid rgb(205,33,29);
+                    }
+                    @media(max-width: 600px){
+                        background-color: red;
+                        visibility: hidden;
+                        svg{}
+                    }
+                    svg{
+                        fill: rgb(205,33,29);
+                    }
+                   
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
                 }
                 .none{
-                    background-color: green;
-                    @media(max-width: 600px),(max-width: 400px){
+                    @media(max-width: 600px){
                         display: none;
                     }
                 }
@@ -105,8 +131,7 @@ img{
             // height: 70vh;
             position: relative;
             @media(max-width: 600px),(max-width: 400px){
-                // background-color: red;
-
+                background-color: red;
             }
             .side-hero{
                 width: 8%;
@@ -121,7 +146,7 @@ img{
                 position: absolute;
                 top: 4.8rem;
                 z-index: 1400;
-                @media(max-width: 600px),(max-width: 400px){
+                @media(max-width: 600px){
                     display: none;
                 }
                 .line{
@@ -139,10 +164,10 @@ img{
                 width: 100%;
                 position: relative;
                 z-index: 10;
-                @media(max-width: 600px),(max-width: 400px){
+                @media(max-width: 600px){
                     width: 100%;
+                    
                 }
-                
                 .left-main{
                     width: 30%;
                     position:absolute;
@@ -150,7 +175,7 @@ img{
                     top: 40%;
                     color: white;
                     z-index: 2000;
-                    @media(max-width: 600px),(max-width: 400px){
+                    @media(max-width: 600px){
                         width: 100%;
                     position: absolute;
                     top: 1rem;
@@ -162,15 +187,18 @@ img{
                         color: white;
                         font-size: 4.4rem;
                         width: 560px;
-                        @media(max-width: 600px),(max-width: 400px){
-                            font-size: 3rem;
-                        width: 100%;
+                        @media(max-width: 600px){
+                            font-size: 2rem;
+                            width: 100%;
                         }
                     }
                     a{
                         text-decoration: none;
                         color: white;
                         justify-content: flex-start;
+                        @media(max-width: 600px){
+                            font-size: 1rem;
+                        }
                         .line{
                             width: 30px;
                             height: 1px;
@@ -183,7 +211,7 @@ img{
                     height: auto;
                     z-index: 100;
                     // overflow: hidden  ;
-                    @media(max-width: 600px),(max-width: 400px){
+                    @media(max-width: 600px){
                         width: 100%;
                         // height: 100vh;
                     }
@@ -214,6 +242,9 @@ img{
                                             }
                                             
                                         }
+                                        @media(max-width: 600px){
+                                            padding: 1rem 1rem;
+                                        }
                                         .youtub-wrapper::after{
                                             content: '';
                                             position: absolute;
@@ -223,31 +254,39 @@ img{
                                             width: 700px;
                                             background: radial-gradient(pink,red,transparent,transparent);
                                         }
+                                        
                                     .youtube{
                                         width: 100px;
+                                        @media(max-width: 600px){
+                                            width: 40px;
+                                            height: 40px;
+                                            
+                                        }
                                     }
                                 }
                                 .text{
                                     position: absolute;
                                     top: 12rem;
+                                    font-family: 'Roboto Mono', monospace;
                                     left: 10%;
                                     z-index: 1000;
                                     // background-color: gold;
                                     width: 40%;
-                                    @media(max-width: 600px),(max-width: 400px){
+                                    @media(max-width: 600px){
                                         position: absolute;
-                                        top: 6rem;
-                                        left: 10%;
+                                        top: 3rem;
+                                        left: 2%;
+                                        width: 100%;
                                         z-index: 1000;
                                     // background-color: gold;
-                                        width: 57%;
+                                        width: 70%;
                                     }
                                     h1{
                                         color: white;
                                         font-size: 4.4rem;
                                         width: 560px;
-                                        @media(max-width: 600px),(max-width: 400px){
-                                            font-size: 3rem;
+                                        @media(max-width: 600px){
+                                            font-size: 2rem;
                                         width: 100%;
                                         }
                                     }
@@ -273,9 +312,9 @@ img{
                                 img{
                                     width: 100%;
                                     height: auto;
-                                    @media(max-width: 600px),(max-width: 400px){
+                                    @media(max-width: 600px){
                                         width: 100%;
-                                        // height: 100%;
+                                        height: 450px;
                                     }
                                 }
                             }
@@ -290,7 +329,7 @@ img{
     background-color: red;
 }
 .splide__arrow{
-    // display: none;
+    display: none;
     color: white;
     top: 30%;
     margin: auto;
