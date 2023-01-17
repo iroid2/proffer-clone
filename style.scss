@@ -59,7 +59,7 @@ img{
                 font-weight: bold;
                 align-items: center;
                 @media(max-width: 600px){
-                    width: 90%;
+                    width: 95%;
                     padding: .6rem .3rem;
                     justify-content: space-between;
                 }
@@ -299,7 +299,6 @@ img{
                                         width: 660px;
                                         font-family: Nimbus Sans Becker PBla;
                                         letter-spacing: .4rem;
-                                        background-color: red;
                                         @media(max-width: 600px){
                                             font-size: 2rem;
                                         width: 100%;
