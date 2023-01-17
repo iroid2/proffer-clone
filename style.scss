@@ -7,8 +7,18 @@ body{
     width: 100vw;
 }
 @import"_target";
+@import"_causes";
 img{
     width: 90%;
+}
+.browntxt{
+    font-style: italic;
+    font-weight: 100;
+}
+.text-trasp{
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(12, 10, 10);
 }
 .tr-text{
     color: transparent;
@@ -69,6 +79,12 @@ img{
                     padding: .6rem .3rem;
                     justify-content: space-between;
                 }
+                .hamMen{
+                    visibility: hidden;;
+                    @media(max-width: 600px){
+                        visibility: visible;
+                    }
+                }
                 .home{
                     border: 2px solid rgb(205,33,29);
                     padding: .4rem .8rem;
@@ -84,6 +100,7 @@ img{
                     @media(max-width: 600px){
                         display: none;
                     }
+                
                 }
             }
             .right-nav{
@@ -103,14 +120,7 @@ img{
                         display: none;
                     }
                 }
-                .hamMen{
-                    background-color: white;
-                    width: 90px;
-                    visibility: hidden;
-                    @media(max-width: 600px){
-                        visibility: visible;
-                    }
-                }
+                
                 .navDonate{
                     padding: .6rem 1rem;
                     gap: .4rem;
