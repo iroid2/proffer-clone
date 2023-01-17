@@ -38,7 +38,7 @@ img{
             position: absolute;
             z-index: 99999;
             top: 0;
-            padding: 1.2rem 1.2rem;
+            padding: .7rem 1.2rem;
             font-family: Arial, Helvetica, sans-serif;
             border-bottom: 1px solid gray;
             // background-color: rgba(54, 53, 53, 0.5);
@@ -87,6 +87,10 @@ img{
                         visibility: visible;
                     }
                 }
+                .navDonate{
+                    padding: .6rem 1rem;
+                    border: 1px solid white;
+                }
                 .none{
                     background-color: green;
                     @media(max-width: 600px),(max-width: 400px){
@@ -98,7 +102,8 @@ img{
         .hero-wrapper{
             background-color: rgb(241, 237, 237);
             width: 100%;
-            height: 70vh;
+            // height: 70vh;
+            position: relative;
             @media(max-width: 600px),(max-width: 400px){
                 // background-color: red;
 
@@ -110,7 +115,7 @@ img{
                 // height: 88vh;
                 flex-direction: column;
                 gap: 1.7rem;
-                padding-top: 10rem;
+                padding-top: 5rem;
                 margin-top: 2.3rem;
                 padding-left: 1rem;
                 position: absolute;
@@ -129,6 +134,7 @@ img{
                     width: 20px;
                 }
             }
+            
             .main-hero{
                 width: 100%;
                 position: relative;
@@ -174,18 +180,105 @@ img{
                 }
                 .splide{
                     width: 100%;
+                    height: auto;
                     z-index: 100;
-                    overflow: hidden  ;
+                    // overflow: hidden  ;
                     @media(max-width: 600px),(max-width: 400px){
                         width: 100%;
-                        height: 100%;
+                        // height: 100vh;
                     }
-                    img{
-                        width: 100%;
-                        height: auto;
-                        @media(max-width: 600px),(max-width: 400px){
-                            width: 120%;
-                            height: 100%;
+                    .splide__track{
+                        // background-color: red;
+                        .splide__list{
+                            background-color: green;
+                            .splide__slide{
+                                .youtub-wrapper{
+                                        position: absolute;
+                                        z-index: 1000;
+                                        top: 30%;
+                                        padding: 2rem 2rem;
+                                        border-radius: 50%;
+                                        border: none;
+                                        right: 2rem;
+                                        justify-content: center;
+                                        padding: 1.5rem 1rem;
+                                        background: radial-gradient(red,rgb(255, 106, 0),pink,rgb(237, 27, 157),);
+                                        background-blend-mode: multiply;
+                                        animation: bgAnimation 3s linear infinite;
+                                        @keyframes bgAnimation {
+                                            0%{
+                                                filter: hue-rotate(0deg);
+                                            }
+                                           100%{
+                                                filter: hue-rotate(360deg);
+                                            }
+                                            
+                                        }
+                                        .youtub-wrapper::after{
+                                            content: '';
+                                            position: absolute;
+                                            top: 50%;
+                                            bottom: 50%;
+                                            transform: translate(-50%,-50%);
+                                            width: 700px;
+                                            background: radial-gradient(pink,red,transparent,transparent);
+                                        }
+                                    .youtube{
+                                        width: 100px;
+                                    }
+                                }
+                                .text{
+                                    position: absolute;
+                                    top: 12rem;
+                                    left: 10%;
+                                    z-index: 1000;
+                                    // background-color: gold;
+                                    width: 40%;
+                                    @media(max-width: 600px),(max-width: 400px){
+                                        position: absolute;
+                                        top: 6rem;
+                                        left: 10%;
+                                        z-index: 1000;
+                                    // background-color: gold;
+                                        width: 57%;
+                                    }
+                                    h1{
+                                        color: white;
+                                        font-size: 4.4rem;
+                                        width: 560px;
+                                        @media(max-width: 600px),(max-width: 400px){
+                                            font-size: 3rem;
+                                        width: 100%;
+                                        }
+                                    }
+                                    a{
+                                        text-decoration: none;
+                                        p{
+                                            color: white;
+                                        }
+                                    }
+                                    .donate{
+                                        color: white;
+                                        justify-content: flex-start;
+                                        padding-top: 1rem;
+                                        gap: .1rem;
+                                        .line{
+                                            width: 30px;
+                                            height: 1px;
+                                            background-color: white;
+                                        }
+                                    }
+                                }
+                                
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                    @media(max-width: 600px),(max-width: 400px){
+                                        width: 100%;
+                                        // height: 100%;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -197,7 +290,14 @@ img{
     background-color: red;
 }
 .splide__arrow{
-    display: none;
+    // display: none;
+    color: white;
+    top: 30%;
+    margin: auto;
+    .splide__arrow--next{
+        background-color: white;
+        right: 2rem;
+    }
 }
 .d{
     background-color: red;
