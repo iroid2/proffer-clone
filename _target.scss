@@ -1,0 +1,27 @@
+.target{
+    width: 100%;
+    padding: 2.3rem 0rem;
+    @media(max-width: 600px),(max-width: 400px){
+        flex-direction: column;         
+    }
+    .left-target{
+        width: 50%;
+        background-color: yellow;
+        @media(max-width: 600px),(max-width: 400px){
+            width: 100%;
+        }
+        img{
+            width: 50%;
+            @media(max-width: 600px),(max-width: 400px){
+                width: 98%;
+            }
+        }
+    }
+    .right-target{
+        width: 50%;
+        background-color: rebeccapurple;
+        @media(max-width: 600px),(max-width: 400px){
+            width: 98%;
+        }
+    }
+}

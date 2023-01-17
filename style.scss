@@ -6,6 +6,7 @@
 body{
     width: 100vw;
 }
+@import"_target";
 img{
     width: 90%;
 }
@@ -355,4 +356,15 @@ img{
 .d{
     background-color: red;
     position: fixed;
+}
+.navDonate{
+    padding: .6rem 1rem;
+    gap: .4rem;
+    border: 2px solid white;
+    text-decoration: none;
+    color: rgb(205,33,29);
+    border-color: rgb(205,33,29);
+    a{
+        text-decoration: none;
+    }
 }
