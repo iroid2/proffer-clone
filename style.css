@@ -10,7 +10,10 @@ body {
 
 .target {
   width: 100%;
-  padding: 2.3rem 0rem;
+  padding: 3rem 4rem;
+  font-family: Nimbus Sans Becker PBla;
+  font-variant: initial;
+  gap: 5rem;
 }
 @media (max-width: 600px), (max-width: 400px) {
   .target {
@@ -19,7 +22,7 @@ body {
 }
 .target .left-target {
   width: 50%;
-  background-color: yellow;
+  padding-right: 0;
 }
 @media (max-width: 600px), (max-width: 400px) {
   .target .left-target {
@@ -27,21 +30,60 @@ body {
   }
 }
 .target .left-target img {
-  width: 50%;
+  width: 78%;
 }
 @media (max-width: 600px), (max-width: 400px) {
   .target .left-target img {
-    width: 98%;
+    width: 100%;
   }
 }
 .target .right-target {
   width: 50%;
-  background-color: rebeccapurple;
+  padding: 0.2rem 0.5rem;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+@media (max-width: 600px), (max-width: 400px) {
+  .target .right-target {
+    width: 100%;
+    padding: 0rem;
+  }
+}
+.target .right-target .text-trasp {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(12, 10, 10);
+}
+.target .right-target .browntxt {
+  font-style: italic;
+  font-weight: 100;
+}
+.target .right-target .donation {
+  border-bottom: 1px solid black;
+  width: 60%;
+  padding: 1rem 0;
+  gap: 2rem;
+}
+.target .right-target .donation .left-dona {
+  gap: 2rem;
+}
+.target .right-target .donation .left-dona .title {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.target .right-target .donation .left-dona .amt {
+  font-weight: bolder;
+}
+.target .right-target .dontn {
+  width: 130px;
 }
 @media (max-width: 600px), (max-width: 400px) {
   .target .right-target {
     width: 98%;
   }
+}
+.target .right-target .browntxt {
+  color: rgb(205, 33, 29);
 }
 
 img {
@@ -63,6 +105,11 @@ img {
 .flex-start {
   display: flex;
   justify-content: flex-start;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .center {
@@ -367,7 +414,7 @@ img {
   color: white;
   font-size: 4.4rem;
   width: 660px;
-  font-family: Nimbus Sans Becker PBla;
+  font-family: "Archivo Black", sans-serif;
   letter-spacing: 0.4rem;
 }
 @media (max-width: 600px) {

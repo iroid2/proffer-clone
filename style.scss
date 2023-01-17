@@ -25,6 +25,11 @@ img{
     display: flex;
     justify-content: flex-start;
 }
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+    // background-color: red;
+}
 .center{
     display: flex;
     justify-content: center;
@@ -298,7 +303,7 @@ img{
                                         color: white;
                                         font-size: 4.4rem;
                                         width: 660px;
-                                        font-family: Nimbus Sans Becker PBla;
+                                        font-family: 'Archivo Black', sans-serif;
                                         letter-spacing: .4rem;
                                         @media(max-width: 600px){
                                             font-size: 2rem;
