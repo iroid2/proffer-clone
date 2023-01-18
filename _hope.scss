@@ -1,9 +1,17 @@
 .hope{
     padding-left: 3rem;
-    padding-top: 5rem;
+    padding-top: 5rem;  
     width: 100%;
+    @media(max-width: 600px),(max-width: 400px){
+        padding-left: .5rem;
+        flex-direction: column;
+    }
     .left-hope-sectn{
         width: 60%;
+        @media(max-width: 600px),(max-width: 400px){
+            width: 100%;
+            flex-direction: column;
+        }
         .more-title{
             flex-direction: row;
             gap: 2rem;

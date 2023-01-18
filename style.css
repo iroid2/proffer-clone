@@ -237,8 +237,20 @@ body {
   padding-top: 5rem;
   width: 100%;
 }
+@media (max-width: 600px), (max-width: 400px) {
+  .hope {
+    padding-left: 0.5rem;
+    flex-direction: column;
+  }
+}
 .hope .left-hope-sectn {
   width: 60%;
+}
+@media (max-width: 600px), (max-width: 400px) {
+  .hope .left-hope-sectn {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 .hope .left-hope-sectn .more-title {
   flex-direction: row;
