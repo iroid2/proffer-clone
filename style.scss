@@ -164,13 +164,12 @@ img{
                 z-index: 10;
                 @media(max-width: 600px){
                     width: 100%;
-                    
                 }
                 .left-main{
-                    width: 30%;
+                    width: 40%;
                     position:absolute;
                     left: 10%;
-                    top: 40%;
+                    top: 30%;
                     color: white;
                     z-index: 2000;
                     @media(max-width: 600px){
@@ -267,12 +266,12 @@ img{
                                 }
                                 .text{
                                     position: absolute;
-                                    top: 12rem;
+                                    top: 4rem;
                                     font-family: 'Roboto Mono', monospace;
                                     left: 10%;
                                     z-index: 1000;
                                     // background-color: gold;
-                                    width: 40%;
+                                    width: 60%;
                                     @media(max-width: 600px){
                                         position: absolute;
                                         top: 3rem;
@@ -284,8 +283,8 @@ img{
                                     }
                                     h1{
                                         color: white;
-                                        font-size: 4.4rem;
-                                        width: 660px;
+                                        font-size: 4rem;
+                                        width: 90%;
                                         font-family: 'Archivo Black', sans-serif;
                                         letter-spacing: .4rem;
                                         @media(max-width: 600px){

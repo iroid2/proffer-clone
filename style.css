@@ -442,10 +442,10 @@ img {
   }
 }
 .container-wraper .header-wrapper .hero-wrapper .main-hero .left-main {
-  width: 30%;
+  width: 40%;
   position: absolute;
   left: 10%;
-  top: 40%;
+  top: 30%;
   color: white;
   z-index: 2000;
 }
@@ -556,11 +556,11 @@ img {
 }
 .container-wraper .header-wrapper .hero-wrapper .main-hero .splide .splide__track .splide__list .splide__slide .text {
   position: absolute;
-  top: 12rem;
+  top: 4rem;
   font-family: "Roboto Mono", monospace;
   left: 10%;
   z-index: 1000;
-  width: 40%;
+  width: 60%;
 }
 @media (max-width: 600px) {
   .container-wraper .header-wrapper .hero-wrapper .main-hero .splide .splide__track .splide__list .splide__slide .text {
@@ -574,8 +574,8 @@ img {
 }
 .container-wraper .header-wrapper .hero-wrapper .main-hero .splide .splide__track .splide__list .splide__slide .text h1 {
   color: white;
-  font-size: 4.4rem;
-  width: 660px;
+  font-size: 4rem;
+  width: 90%;
   font-family: "Archivo Black", sans-serif;
   letter-spacing: 0.4rem;
 }
