@@ -21,8 +21,12 @@
         }
         .options{
             width: 100%;
+            flex-direction: column;
             .left-optn{
                 width: 50%;
+                @media(max-width: 600px),(max-width: 400px){
+                    width: 98%;
+                }
                 .edu-option{
                     // background-color: red;
                     .icon-sectn{
@@ -37,6 +41,9 @@
             }
             .right-optn{
                 width: 50%;
+                @media(max-width: 600px),(max-width: 400px){
+                    width: 98%;
+                }
             }
         }
     }

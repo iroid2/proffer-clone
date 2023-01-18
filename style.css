@@ -261,9 +261,15 @@ body {
 }
 .hope .left-hope-sectn .options {
   width: 100%;
+  flex-direction: column;
 }
 .hope .left-hope-sectn .options .left-optn {
   width: 50%;
+}
+@media (max-width: 600px), (max-width: 400px) {
+  .hope .left-hope-sectn .options .left-optn {
+    width: 98%;
+  }
 }
 .hope .left-hope-sectn .options .left-optn .edu-option .icon-sectn svg {
   width: 40px;
@@ -273,6 +279,11 @@ body {
 }
 .hope .left-hope-sectn .options .right-optn {
   width: 50%;
+}
+@media (max-width: 600px), (max-width: 400px) {
+  .hope .left-hope-sectn .options .right-optn {
+    width: 98%;
+  }
 }
 img {
   width: 90%;
