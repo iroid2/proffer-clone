@@ -92,15 +92,56 @@ body {
 .causes .top-causes {
   text-align: center;
 }
-.causes .bottm-causes .container-fluid .row .col-md-2 {
-  position: relative;
-  background-color: rebeccapurple;
-}
-.causes .bottm-causes .container-fluid .row .col-md-2 p {
-  bottom: 0rem;
+.causes .bottm-causes .container-fluid .owl-carousel .item .card .overal {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  opacity: 0.7;
+  z-index: 0.1;
+}
+.causes .bottm-causes .container-fluid .owl-carousel .item .card .inpic-details {
+  position: absolute;
+  top: 50%;
+  color: white;
+  padding: 1rem 1rem;
+  z-index: 200;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to top, black 70%, transparent);
+}
+.causes .bottm-causes .container-fluid .owl-carousel .item .card .inpic-details .centage-cause {
+  width: 85%;
+  height: 5px;
+  margin: 1rem 0.1rem;
+  background-color: rgb(240, 235, 235);
+}
+.causes .bottm-causes .container-fluid .owl-carousel .item .card .inpic-details .centage-cause:hover {
+  top: 0;
+  -webkit-animation: toTop;
+          animation: toTop;
+}
+@-webkit-keyframes toTop {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+@keyframes toTop {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+.causes .bottm-causes .container-fluid .owl-carousel .item .card .inpic-details .centage-cause .occupied {
+  width: 79%;
+  height: 100%;
+  background-color: brown;
+}
+.causes .bottm-causes .container-fluid .owl-carousel .item .card img {
+  filter: grayscale(100%);
 }
 
 .browntxt {
@@ -184,6 +225,8 @@ img {
   width: 100%;
   gap: 2rem;
   position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 99999;
   top: 0;

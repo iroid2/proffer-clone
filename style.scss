@@ -20,6 +20,7 @@ img{
             width: 100%;
             gap: 2rem;
             position: fixed;
+            position: sticky;
             background-color: rgba(black,.4);
             z-index: 99999;
             top: 0;
@@ -27,8 +28,6 @@ img{
             // background-color: red;
             font-family: Arial, Helvetica, sans-serif;
             border-bottom: 1px solid rgb(255, 239, 239);
-            // position: sticky;
-            // background-color: rgba(54, 53, 53, 0.5);
             @media(max-width: 600px){
                 background-color: rgb(11, 11, 11);
                 justify-content: space-between;
