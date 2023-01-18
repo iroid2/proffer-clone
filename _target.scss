@@ -6,7 +6,8 @@
     gap: 5rem;
     // background-color: brown;
     @media(max-width: 600px),(max-width: 400px){
-        flex-direction: column;         
+        flex-direction: column;  
+        padding: 3rem 1rem;       
     }
     .left-target{
         width: 50%;

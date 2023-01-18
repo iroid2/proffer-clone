@@ -7,6 +7,11 @@
 body {
   width: 100vw;
 }
+@media (max-width: 600px), (max-width: 400px) {
+  body {
+    width: 100vw;
+  }
+}
 
 .target {
   width: 100%;
@@ -18,6 +23,7 @@ body {
 @media (max-width: 600px), (max-width: 400px) {
   .target {
     flex-direction: column;
+    padding: 3rem 1rem;
   }
 }
 .target .left-target {
@@ -107,6 +113,12 @@ body {
   z-index: 200;
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(to top, black 70%, transparent);
+}
+@media (max-width: 600px), (max-width: 400px) {
+  .causes .bottm-causes .container-fluid .owl-carousel .item .card .inpic-details {
+    left: 1%;
+    width: 100%;
+  }
 }
 .causes .bottm-causes .container-fluid .owl-carousel .item .card .inpic-details .centage-cause {
   width: 85%;
@@ -241,6 +253,7 @@ img {
     padding: 0rem 0.3rem;
     position: -webkit-sticky;
     position: sticky;
+    width: 100%;
   }
 }
 .container-wraper .header-wrapper .navBar-wrapper img {

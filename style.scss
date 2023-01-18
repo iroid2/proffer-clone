@@ -5,6 +5,9 @@
 }
 body{
     width: 100vw;
+    @media(max-width: 600px),(max-width: 400px){
+        width: 100vw;
+    }
 }
 @import"_target";
 @import"_causes";
@@ -33,6 +36,7 @@ img{
                 justify-content: space-between;
                 padding: 0rem .3rem;
                 position: sticky;
+                width: 100%;
             }
             img{
                 width: 120px;

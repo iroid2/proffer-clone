@@ -26,6 +26,10 @@
                             z-index: 200;
                             font-family: Arial, Helvetica, sans-serif;
                             background: linear-gradient(to top,black 70% , transparent);
+                            @media(max-width: 600px),(max-width: 400px){
+                                left: 1%;
+                                width: 100%;
+                            }
                             .centage-cause{
                                 width: 85%;
                                 height: 5px;
