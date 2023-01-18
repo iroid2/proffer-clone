@@ -226,6 +226,42 @@ body {
   text-decoration: none;
 }
 
+.more-line {
+  width: 30px;
+  height: 2px;
+  background-color: black;
+}
+
+.hope {
+  padding-left: 3rem;
+  padding-top: 5rem;
+  width: 100%;
+}
+.hope .left-hope-sectn {
+  width: 60%;
+}
+.hope .left-hope-sectn .more-title {
+  flex-direction: row;
+  gap: 2rem;
+}
+.hope .left-hope-sectn .more-title .more-line {
+  justify-items: center;
+}
+.hope .left-hope-sectn .options {
+  width: 100%;
+}
+.hope .left-hope-sectn .options .left-optn {
+  width: 50%;
+}
+.hope .left-hope-sectn .options .left-optn .edu-option .icon-sectn svg {
+  width: 40px;
+}
+.hope .left-hope-sectn .options .left-optn .edu-option .title {
+  font-weight: bold;
+}
+.hope .left-hope-sectn .options .right-optn {
+  width: 50%;
+}
 img {
   width: 90%;
 }

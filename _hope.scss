@@ -1,0 +1,36 @@
+.hope{
+    padding-left: 3rem;
+    padding-top: 5rem;
+    width: 100%;
+    .left-hope-sectn{
+        width: 60%;
+        .more-title{
+            flex-direction: row;
+            gap: 2rem;
+            .more-line{
+                justify-items: center;
+            }
+        }
+        .options{
+            width: 100%;
+            .left-optn{
+                width: 50%;
+                .edu-option{
+                    // background-color: red;
+                    .icon-sectn{
+                        svg{
+                            width: 40px;
+                        }
+                    }
+                    .title{
+                        font-weight: bold;
+                    }
+                }
+            }
+            .right-optn{
+                width: 50%;
+            }
+        }
+    }
+    .right-hope-sectn{}
+}
