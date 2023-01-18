@@ -1,7 +1,22 @@
 .causes{
-    background-color: green;
+    width: 100%;
     .top-causes{
         text-align: center;
     }
-    .bottm-causes{}
+    .bottm-causes{
+        .container-fluid{
+            .row{
+                .col-md-2{
+                    position: relative;
+                    background-color: rebeccapurple;
+                    p{
+                        bottom: 0rem;
+                        position: absolute;
+                        font-weight: bold;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    }
+                }
+            }
+        }
+    }
 }

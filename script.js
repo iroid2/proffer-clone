@@ -1,21 +1,26 @@
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
+var splide = new Splide( '.splide', {
+  type  : 'slide',
+  rewind: true,
+  perPage : 1,
+  autoplay: true,
+  autoplayTimeout:1000,
+  } );
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+ splide.mount()
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
+ $('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:5
+      }
+  }
+})

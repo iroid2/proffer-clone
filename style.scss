@@ -8,50 +8,19 @@ body{
 }
 @import"_target";
 @import"_causes";
+@import"_globleClasses";
 img{
     width: 90%;
 }
-.browntxt{
-    font-style: italic;
-    font-weight: 100;
-}
-.text-trasp{
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(12, 10, 10);
-}
-.tr-text{
-    color: transparent;
-    // text-shadow:white;
-    -webkit-text-fill-color: rgba(0, 0, 0, 0.01);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #fff;
-}
-.flex-space{
-    display: flex;
-    justify-content: space-between;
-}
-.flex-start{
-    display: flex;
-    justify-content: flex-start;
-}
-.flex-end{
-    display: flex;
-    justify-content: flex-end;
-    // background-color: red;
-}
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .container-wraper{
     width: 100%;
     .header-wrapper{
         .navBar-wrapper{
             width: 100%;
             gap: 2rem;
-            position: absolute;
+            position: fixed;
+            background-color: rgba(black,.4);
             z-index: 99999;
             top: 0;
             padding: .7rem 4rem;
@@ -357,29 +326,4 @@ img{
 }
 .normal{
     background-color: red;
-}
-.splide__arrow{
-    display: none;
-    color: white;
-    top: 30%;
-    margin: auto;
-    .splide__arrow--next{
-        background-color: white;
-        right: 2rem;
-    }
-}
-.d{
-    background-color: red;
-    position: fixed;
-}
-.navDonate{
-    padding: .6rem 1rem;
-    gap: .4rem;
-    border: 2px solid white;
-    text-decoration: none;
-    color: rgb(205,33,29);
-    border-color: rgb(205,33,29);
-    a{
-        text-decoration: none;
-    }
 }
